@@ -74,7 +74,6 @@ nav {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin-left: auto;
   margin-right: auto;
-  height: 91vh;
   padding: 2vw 2vw;
   width: 70%;
 }
@@ -122,6 +121,10 @@ nav {
 .containerForm button {
   padding: 0.7vw 2vw;
 }
+/* Header Band */
+.container-header {
+  width: 90%;
+}
 /* Band */
 .container-band {
   background-image: url("https://images.pexels.com/photos/96380/pexels-photo-96380.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
@@ -129,6 +132,8 @@ nav {
   background-size: cover;
   border-radius: 10px;
   margin-bottom: 2vw;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 .containerDataBand div {
@@ -156,13 +161,26 @@ nav {
   text-align: left;
   font-weight: lighter;
 }
+.container-genre-band {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .title-band {
   font-size: 4.5vw;
   font-weight: bolder;
 }
+/* TOPS */
+.contenedor-tops {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 /* Songs */
 .container-top-songs {
   text-align: left;
+}
+.container-top-songs h2 {
+  margin-bottom: 1vw;
 }
 .song-name {
   font-size: 1.6vw;
@@ -170,4 +188,25 @@ nav {
 }
 .number-ranking {
   font-weight: bolder;
+}
+/* image */
+.container-image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.container-image img {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+  width: 60%;
+}
+/* Summary */
+.container-paragraph-bio {
+  margin-top: 4vw;
+  text-align: left;
+}
+.container-paragraph-bio h1 {
+  margin-top: 1vw;
+}
+.container-paragraph-bio p {
+  margin-top: 1vw;
 }

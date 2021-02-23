@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
-
-import fotito from './img/background.jpg';
+import foto from './img/background.jpg';
 
 import Weather from './app_component/weather.component';
 import Form from './app_component/form.component';
@@ -18,6 +17,8 @@ class App extends React.Component{
     this.state={
       band: undefined,
       fundation: undefined,
+      MainImage: undefined,
+      summary: undefined,
       genre: undefined,
       song0: undefined,
       song1: undefined,
@@ -51,11 +52,13 @@ class App extends React.Component{
       const TopAlbumInfo = await fetch(        
         `http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&artist=${band}&api_key=${API_key}&format=json`);
       const ResponseTopAlbumInfo = await TopAlbumInfo.json();
-      console.log(ResponseTopAlbumInfo.topalbums.album[0]);
+      console.log(ResponseTopAlbumInfo.topalbums.album[0].image[3]['#text']); 
 
       this.setState(
         {
           band: ResponseArtistInfo.artist.name,
+          summary: ResponseArtistInfo.artist.bio.summary,
+          MainImage: ResponseTopAlbumInfo.topalbums.album[0].image[3]['#text'],
           genre: ResponseArtistInfo.artist.tags.tag[0].name,
           song0: response.toptracks.track[0].name,
           song1: response.toptracks.track[1].name,
@@ -76,7 +79,9 @@ class App extends React.Component{
          <Form loadWeather={this.buscarData}/>
          <Weather 
           band={this.state.band}
+          MainImage={this.state.MainImage}
           genre={this.state.genre}
+          summary={this.state.summary}
           song0={this.state.song0}
           song1={this.state.song1}
           song2={this.state.song2}
