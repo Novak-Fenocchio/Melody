@@ -1,13 +1,173 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+*,
+* {
+  margin: 0;
+  padding: 0;
+}
+/* utilities */
+.btn-black {
+  background-color: black;
+  border: black;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  padding: 0.5vw 1vw;
+  transition: all 0.3s;
+}
+.btn-black:hover {
+  background-color: rgb(32, 32, 32);
+  border: rgb(32, 32, 32);
+  transform: scale(1.1);
+}
+.text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* General */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.body {
+  background-color: rgb(238, 238, 238);
+  background-size: cover;
+}
+/* Nav */
+nav {
+  background-color: black;
+  color: white;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: space-evenly;
+}
+.nav-item {
+  display: inline-block;
+  font-size: 1.9vw;
+  padding: 0.5vw 1vw;
+}
+.nav-title {
+  font-size: 3vw;
+  font-weight: bolder;
+  font-family: "Kaushan Script";
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+/* Main */
+.App {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  height: 91vh;
+  padding: 2vw 2vw;
+  width: 70%;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+.formInputs {
+  text-align: left;
+}
+.formInputs label {
+  font-size: 1.8vw;
+  font-weight: lighter;
+}
+.containerForm {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+  padding: 2vw 0vw;
+  width: 85%;
+}
+.containerForm input {
+  background-color: rgb(238, 238, 238);
+  border: 2px solid rgb(238, 238, 238);
+  border-radius: 5px;
+  color: black;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+  padding: 0.5vw 1vw;
+  width: 140%;
+}
+.containerForm input:focus {
+  background-color: rgba(0, 0, 0, 0.034);
+  outline: 0;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.containerForm button {
+  padding: 0.7vw 2vw;
+}
+/* Band */
+.container-band {
+  background-image: url("https://images.pexels.com/photos/96380/pexels-photo-96380.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin-bottom: 2vw;
+  width: 100%;
+}
+.containerDataBand div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.containerDataBand div span {
+  font-weight: normal;
+}
+.background-black {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.651);
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+}
+.containerDataBand {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5vw 2vw 1vw 2vw;
+}
+.age-band,
+.genre-band {
+  text-align: left;
+  font-weight: lighter;
+}
+.title-band {
+  font-size: 4.5vw;
+  font-weight: bolder;
+}
+/* Songs */
+.container-top-songs {
+  text-align: left;
+}
+.song-name {
+  font-size: 1.6vw;
+  font-weight: normal;
+}
+.number-ranking {
+  font-weight: bolder;
 }
