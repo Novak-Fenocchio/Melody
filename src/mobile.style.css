@@ -1,0 +1,98 @@
+@media (max-width: 800px) {
+  h1 {
+    font-size: 5vw;
+  }
+  h2 {
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 3vw;
+  }
+  h4 {
+    font-size: 2vw;
+  }
+  h5 {
+    font-size: 1vw;
+  }
+
+  /* General */
+  .container {
+    width: 95%;
+  }
+  .formInputs label {
+    font-size: 5vw;
+  }
+  /* Nav */
+  .nav-item {
+    font-size: 5vw;
+    padding: 2vw 2vw;
+  }
+  .nav-title {
+    font-size: 7vw;
+  }
+  .App {
+    width: 95%;
+  }
+  /* Form search */
+  .containerForm input {
+    font-size: 5vw;
+    width: 100%;
+  }
+  .containerForm button {
+    border-radius: 2px;
+    font-size: 5vw;
+    text-transform: capitalize;
+    padding: 1vw 2vw;
+  }
+  /* Band */
+  .container-band {
+    border-radius: 3px;
+    margin-top: 4vw;
+  }
+  .background-black {
+    border-radius: 3px;
+  }
+  .container-header {
+    width: 100%;
+  }
+  .containerDataBand {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 2vw 0.5vw 2vw 0vw;
+  }
+  .contenedor-tops {
+    grid-template-columns: 70% 30%;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+  }
+  .title-band {
+    font-size: 7vw;
+  }
+  /* Tops songs */
+  .container-top-songs h2 {
+    font-size: 5vw;
+  }
+  .container-top-songs h4 {
+    font-size: 4vw;
+  }
+  .container-image img {
+    width: 100%;
+  }
+  .container-image {
+    display: block;
+    text-align: right;
+  }
+  /* Summary */
+  .container-paragraph-bio p {
+    font-size: 4vw;
+    overflow-x: hidden;
+  }
+  /* Listen and top albums */
+  .container-top-albums {
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+  }
+  .container-listen-buttons div a button {
+    margin-bottom: 4vw;
+  }
+}

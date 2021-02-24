@@ -22,6 +22,52 @@
   border: rgb(32, 32, 32);
   transform: scale(1.1);
 }
+.btn-green {
+  background-color: rgb(191, 247, 177);
+  border: rgb(191, 247, 177);
+  border-radius: 5px;
+  color: white;
+  font-size: 2vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: auto;
+  margin-bottom: 1vw;
+  margin-right: auto;
+  padding: 0.5vw 1vw 0vw;
+  transition: all 0.3s;
+  width: 70%;
+}
+
+.btn-white {
+  background-color: rgb(230, 229, 229);
+  border: white;
+  border-radius: 5px;
+  color: white;
+  font-size: 2vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: auto;
+  margin-bottom: 1vw;
+  margin-right: auto;
+  padding: 0.5vw 1vw 0vw;
+  transition: all 0.3s;
+  width: 70%;
+}
+.btn-red {
+  background-color: rgb(255, 221, 221);
+  border: white;
+  border-radius: 7px;
+  color: white;
+  font-size: 2vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: auto;
+  margin-bottom: 1vw;
+  margin-right: auto;
+  padding: 0.8vw 1vw 0vw;
+  transition: all 0.3s;
+  width: 70%;
+}
+a button:hover {
+  transform: scale(1.1);
+}
 .text-center {
   display: flex;
   justify-content: center;
@@ -202,6 +248,7 @@ nav {
 /* Summary */
 .container-paragraph-bio {
   margin-top: 4vw;
+  margin-bottom: 2vw;
   text-align: left;
 }
 .container-paragraph-bio h1 {
@@ -209,4 +256,37 @@ nav {
 }
 .container-paragraph-bio p {
   margin-top: 1vw;
+}
+/* Albums */
+.container-top-albums {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 2vw;
+}
+.container-top-albums hr {
+  margin-bottom: 2vw;
+}
+.container-tops-albums {
+  padding-top: 1vw;
+}
+.top-first {
+  color: rgb(194, 165, 4);
+  font-weight: bolder;
+}
+.top-second {
+  color: rgb(151, 151, 151);
+  font-weight: bold;
+}
+.top-third {
+  color: chocolate;
+  font-weight: bold;
+}
+/* Listen */
+.container-listen-buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.btn-search img {
+  width: 90%;
 }
