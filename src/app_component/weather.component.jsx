@@ -28,7 +28,7 @@ const Weather = (props) =>{
             <div className='container'>
                 <div className="text-center contenedor-tops">
                     <div className="container-top-songs">
-                        <h2>Top canciones:</h2>
+                        <h2>Topaaaaa canciones:</h2>
                         <h4 className='song-name'> <span className='number-ranking'>1.</span> {props.song0}.</h4>
                         <h4 className='song-name'> <span className='number-ranking'>2.</span> {props.song1}.</h4>
                         <h4 className='song-name'> <span className='number-ranking'>3.</span> {props.song2}.</h4>
