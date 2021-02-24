@@ -41,7 +41,7 @@ class App extends React.Component{
         e.preventDefault();
         const band = e.target.elements.city.value;
         const api_call = await fetch(        
-          `http://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&lang=es&artist=${band}&api_key=baa4f0d8d71d7e8197c87d67191a1d19&format=json`
+          `https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&lang=es&artist=${band}&api_key=baa4f0d8d71d7e8197c87d67191a1d19&format=json`
         );
 
       const response = await api_call.json();
@@ -49,13 +49,13 @@ class App extends React.Component{
 
       /* InfoArtist */
       const artistInfo = await fetch(        
-        `http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&lang=es&artist=${band}&api_key=${API_key}&format=json`);
+        `https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&lang=es&artist=${band}&api_key=${API_key}&format=json`);
       const ResponseArtistInfo = await artistInfo.json();
       console.log(ResponseArtistInfo.artist);
 
       /* Tops albums */
       const TopAlbumInfo = await fetch(        
-        `http://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&lang=es&artist=${band}&api_key=${API_key}&format=json`);
+        `https://ws.audioscrobbler.com/2.0/?method=artist.gettopalbums&lang=es&artist=${band}&api_key=${API_key}&format=json`);
       const ResponseTopAlbumInfo = await TopAlbumInfo.json();
       console.log(ResponseTopAlbumInfo); 
 
