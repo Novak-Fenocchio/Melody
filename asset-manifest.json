@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Melody/static/css/main.71ea44f2.chunk.css",
+    "main.js": "/Melody/static/js/main.83c22cf9.chunk.js",
+    "main.js.map": "/Melody/static/js/main.83c22cf9.chunk.js.map",
+    "runtime-main.js": "/Melody/static/js/runtime-main.1890c3bf.js",
+    "runtime-main.js.map": "/Melody/static/js/runtime-main.1890c3bf.js.map",
+    "static/js/2.44e1ea0b.chunk.js": "/Melody/static/js/2.44e1ea0b.chunk.js",
+    "static/js/2.44e1ea0b.chunk.js.map": "/Melody/static/js/2.44e1ea0b.chunk.js.map",
+    "static/js/3.73d5c246.chunk.js": "/Melody/static/js/3.73d5c246.chunk.js",
+    "static/js/3.73d5c246.chunk.js.map": "/Melody/static/js/3.73d5c246.chunk.js.map",
+    "index.html": "/Melody/index.html",
+    "static/css/main.71ea44f2.chunk.css.map": "/Melody/static/css/main.71ea44f2.chunk.css.map",
+    "static/js/2.44e1ea0b.chunk.js.LICENSE.txt": "/Melody/static/js/2.44e1ea0b.chunk.js.LICENSE.txt",
+    "static/media/itunes.67e92c88.png": "/Melody/static/media/itunes.67e92c88.png",
+    "static/media/spotify.f525241f.png": "/Melody/static/media/spotify.f525241f.png",
+    "static/media/youtubeImage.19ba66fd.png": "/Melody/static/media/youtubeImage.19ba66fd.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1890c3bf.js",
+    "static/js/2.44e1ea0b.chunk.js",
+    "static/css/main.71ea44f2.chunk.css",
+    "static/js/main.83c22cf9.chunk.js"
+  ]
+}
