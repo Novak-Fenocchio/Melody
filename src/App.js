@@ -30,7 +30,8 @@ class App extends React.Component{
       song1: undefined,
       song2: undefined,
       song3: undefined,
-      song4: undefined
+      song4: undefined,
+      searchEmpty: true
     };
 
   }
@@ -76,7 +77,8 @@ class App extends React.Component{
           song1: response.toptracks.track[1].name,
           song2: response.toptracks.track[2].name,
           song3: response.toptracks.track[3].name,
-          song4: response.toptracks.track[4].name
+          song4: response.toptracks.track[4].name,
+          searchEmpty: false
         });
       };
 
@@ -89,6 +91,7 @@ class App extends React.Component{
           <Nav />
         <div className="App">
          <Form loadWeather={this.buscarData}/>
+        {this.state.searchEmpty == false && 
          <Weather 
           band={this.state.band}
           MainImage={this.state.MainImage}
@@ -105,6 +108,12 @@ class App extends React.Component{
           song3={this.state.song3}
           song4={this.state.song4}
          />
+        }
+        {this.state.searchEmpty &&
+          <div className='searchEmpty'>
+            <h1>Busca algún artista!</h1>
+          </div>
+        }
         </div>
       </React.Fragment>
     );   

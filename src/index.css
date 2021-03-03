@@ -290,3 +290,15 @@ nav {
 .btn-search img {
   width: 90%;
 }
+/* Search Empty */
+.searchEmpty {
+  background-color: rgb(31, 31, 31);
+  border: 2px solid rgb(31, 31, 31);
+  border-radius: 5px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vw;
+  padding: 0.5vw 1vw;
+  width: 50%;
+}
